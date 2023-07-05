@@ -2,7 +2,6 @@ package test_search;
 
 import base.BasePage;
 import homepage.HomePage;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -21,9 +20,9 @@ public class TestSearch extends BasePage {
     @DataProvider(name = "searchDataProvider")
     public String[][] searchDataProvider() {
 
-        String path = System.getProperty("user.dir") + "\\src\\test\\resources\\test_data2.xlsx";
+        String path = System.getProperty("user.dir") + "\\src\\test\\resources\\test_data.xlsx";
         ExcelData ex = new ExcelData(path);
-        String data[][] = ex.readStringArrays("testDoSearch");
+        String data[][] = ex.readStringArrays("doSearch");
         return data;
     }
 
