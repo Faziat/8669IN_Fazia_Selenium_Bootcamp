@@ -5,6 +5,7 @@ import homepage.HomePage;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import searchpage.ModelSelectedPage;
 import utils.ExcelData;
 
 public class TestSearch extends BasePage {

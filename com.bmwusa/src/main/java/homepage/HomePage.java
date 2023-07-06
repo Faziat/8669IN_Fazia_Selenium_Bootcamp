@@ -52,6 +52,7 @@ public class HomePage extends BasePage {
         enterSearchTerm(model, year);
     }
 
+
     public ModelSelectedPage clickOnVehicleModel() {
         safeClickOnElement(vehicleModel);
         return new ModelSelectedPage();
