@@ -1,4 +1,4 @@
-package testhomepage;
+package test_homepage;
 
 public class TestHomePage {
 }
