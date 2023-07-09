@@ -28,14 +28,14 @@ public class TestAccountSettings extends BasePage {
         AccountSettingPage accountSettingPage= new AccountSettingPage();
 
         homePage.clickOnSignInLink();
-        String email = "abc1@gmail.com";
-        String password = "AydenLiam1213";
+        String email = "toubouachefazia@gmail.com";
+        String password = "Fazia@96us";
 
         signInPage.doSignIn(email, password);
         homePage.hoverClickOnAccount();
-        String phoneNumber = "2679342174";
-        String streetAddress = "123 Main st";
-        String city ="New York";
+        String phoneNumber = "223-334-5589";
+        String streetAddress = "1277 Ritchie dr";
+        String city ="Indiana";
 
         accountSettingPage.doSaveChanges(phoneNumber,streetAddress, city);
 
@@ -48,8 +48,8 @@ public class TestAccountSettings extends BasePage {
         AccountSettingPage accountSettingPage= new AccountSettingPage();
 
         homePage.clickOnSignInLink();
-        String email = "abc1@gmail.com";
-        String password = "AydenLiam1213";
+        String email = "toubouachefazia@gmail.com";
+        String password = "Fazia@96us";
 
         signInPage.doSignIn(email, password);
         homePage.hoverClickOnAccount();

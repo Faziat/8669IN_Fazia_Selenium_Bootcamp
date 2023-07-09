@@ -29,10 +29,11 @@ public class TestSearch extends BasePage {
         ResultSearchPage resultSearchPage= new ResultSearchPage();
 
         homePage.clickOnSignInLink();
-        String email="abc1@gmail.com";
-        String password="AydenLiam1213";
+        String email="Toubouachefazia@gmail.com";
+        String password="Fazia@96us";
 
         signInPage.doSignIn(email,password);
+        String location = "New York City";
 
         searchPage.searchTerm(searchTerm);
         resultSearchPage.doSearch();
@@ -69,11 +70,11 @@ public class TestSearch extends BasePage {
 
 
         homePage.clickOnSignInLink();
-        String email="abc1@gmail.com";
-        String password="AydenLiam1213";
+        String email="toubouachefazia@gmail.com";
+        String password="Fazia@96us";
 
         signInPage.doSignIn(email,password);
-        String searchTerm="19130 PA, Philadelphia";
+        String searchTerm="1277 Ritchie dr, Indiana";
         searchPage.searchTerm(searchTerm);
         resultSearchPage.doSearch();
         resultSearchPage.clickOnHearts();
