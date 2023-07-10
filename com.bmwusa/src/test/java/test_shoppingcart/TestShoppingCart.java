@@ -15,7 +15,7 @@ public class TestShoppingCart extends BasePage {
     public void testShoppingCart() {
 
         HomePage homePage = new HomePage();
-        LoginPage loginPage = homePage.clickOnLoginLink();
+        LoginPage loginPage = homePage.clickOnLogInLink();
         String email = "toubouachefazia@gmail.com";
         String password = "Fazia@96us";
         DashboardPage dashboardPage = loginPage.doSign(email, password);
