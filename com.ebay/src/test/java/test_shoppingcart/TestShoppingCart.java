@@ -8,7 +8,7 @@ import resultpage.ResultPage;public class TestShoppingCart extends BasePage {
 
     public void testAddToCart() {
       HomePage homePage = new HomePage();
-        String searchTerm="baby shampoo";
+        String searchTerm="bird cage";
        ResultPage resultPage= homePage.doSearch(searchTerm);
         resultPage.doAddToCart();
         Assert.assertTrue(isElementVisible(resultPage.goToCheckoutButton));
