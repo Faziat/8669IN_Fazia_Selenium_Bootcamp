@@ -35,10 +35,6 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//*[@id=\"destination_publishing_iframe_bmwmini_0\"]")
     public WebElement iframeSearchBar;
 
-
-
-
-
     public LoginPage clickOnLogInLink(){
         safeClickOnElement(logInLink);
         return new LoginPage();
