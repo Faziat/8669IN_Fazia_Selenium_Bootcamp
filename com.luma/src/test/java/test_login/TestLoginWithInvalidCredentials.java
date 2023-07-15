@@ -14,4 +14,5 @@ public class TestLoginWithInvalidCredentials extends BasePage {
         loginPageWithInvalidCredentials.getLogIn(invalidEmail, invalidPassword);
         Assert.assertTrue(isElementVisible(loginPageWithInvalidCredentials.errorMessageLogin));
     }
+
 }
