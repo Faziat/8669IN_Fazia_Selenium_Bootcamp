@@ -8,7 +8,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import utils.ExcelData;
 public class TestLoginWithValidCredentials extends BasePage {
-    @Test(priority = 4,dataProvider = "loginDataProvider")
+    @Test(priority = 2,dataProvider = "loginDataProvider")
     public void testLogin(String validEmail,String validPassword){
         HomePage homePage=new HomePage();
       LoginWithValidCredentials loginPage=new LoginWithValidCredentials();

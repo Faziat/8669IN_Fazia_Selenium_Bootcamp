@@ -1,4 +1,4 @@
-package test_searchresultpage;
+package test_searchresult;
 
 import base.BasePage;
 import homepage.HomePage;
