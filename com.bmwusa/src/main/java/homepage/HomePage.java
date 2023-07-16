@@ -9,11 +9,9 @@ import searchpage.ModelSelectedPage;
 
 public class HomePage extends BasePage {
 
-
     public HomePage(){
         PageFactory.initElements(driver,this);
     }
-
     @FindBy(xpath="//a[@href='http://mybmw.bmwusa.com']")
     public WebElement logInLink;
     @FindBy(xpath = "//div[@class=\"custom-header-subtitle __b\"]//a")
@@ -35,6 +33,7 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//*[@id=\"destination_publishing_iframe_bmwmini_0\"]")
     public WebElement iframeSearchBar;
 
+
     public LoginPage clickOnLogInLink(){
         safeClickOnElement(logInLink);
         return new LoginPage();
@@ -43,9 +42,8 @@ public class HomePage extends BasePage {
         safeClickOnElement(searchIcon);
     }
 
-
     public void enterSearchTerm(String model, String year) {
-        //switchToFrameByElement(iframeSearchBar);
+
         safeClickOnElement(searchBar);
         sendKeysToElement(searchBar, model);
         sendKeysToElement(searchBar, year);
@@ -64,6 +62,8 @@ public class HomePage extends BasePage {
         safeClickOnElement(vehicleModel);
         return new ModelSelectedPage();
     }
+
+
 
 
 }
