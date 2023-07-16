@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import utils.ExcelData;
 
 public class TestAtmLocator extends BasePage {
-    @Test(priority = 1, groups = {"BAT"}, dataProvider = "searchAtmLocationDataProvider")
+    @Test(priority = 1, dataProvider = "searchAtmLocationDataProvider")
 
     public void testSearchAtmLocator(String zipCode) {
 
