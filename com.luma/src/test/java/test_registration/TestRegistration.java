@@ -8,7 +8,7 @@ import registrationpage.RegistrationPage;
 import utils.ExcelData;
 import utils.GenerateData;
 public class TestRegistration extends BasePage {
-    @Test(priority = 5, groups= {"BAT"}, dataProvider = "registrationDataProvider")
+    @Test(priority = 5, dataProvider = "registrationDataProvider")
     public void testRegistration(String firstName, String lastName, String emailAddress,String password){
         RegistrationPage registrationPage;
         registrationPage= new RegistrationPage();

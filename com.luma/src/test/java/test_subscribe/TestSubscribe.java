@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import utils.ExcelData;
 
 public class TestSubscribe extends BasePage {
-   @Test(priority = 7, groups = {"BAT"},dataProvider = "doSubscribeDataProvider")
+   @Test(priority = 7,dataProvider = "doSubscribeDataProvider")
     public void testSubscribe(String email){
        HomePage homepage= new HomePage();
 

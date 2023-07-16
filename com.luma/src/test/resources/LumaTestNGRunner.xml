@@ -8,5 +8,17 @@
 
     <parameter name="browser" value="chrome"/>
     <parameter name="url" value="https://magento.softwaretestingboard.com/"/>
+    <test name="smoke">
 
+        <classes>
+            <class name="test_homepage.TestHomePage"/>
+            <class name="test_login.TestLoginWithInvalidCredentials"/>
+            <class name="test_login.TestLoginWithValidCredentials"/>
+            <class name="test_searchresult.TestSearchResultPage"/>
+            <class name="test_registration.TestRegistration"/>
+            <class name="test_subscribe.TestSubscribe"/>
+            <class name="test_contactus.TestContactUs"/>
+
+        </classes>
+    </test>
 </suite>
