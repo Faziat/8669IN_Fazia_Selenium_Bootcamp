@@ -8,5 +8,19 @@
 
     <parameter name="browser" value="chrome"/>
     <parameter name="url" value="http://expedia.com"/>
+    <test name="Smoke">
+        <classes>
+            <class name="test_homepage.TestHomePage"/>
+            <class name="test_authentication.TestAuthentication"/>
+            <class name="test_searchstay.TestSearchStay"/>
+            <class name="test_flightsearch.TestSearchFlight"/>
+            <class name="test_switchlanguage.TestSwitchLanguage"/>
+            <class name="test_feedback.TestFeedBack"/>
+
+
+
+
+        </classes>
+    </test>
 
 </suite>
