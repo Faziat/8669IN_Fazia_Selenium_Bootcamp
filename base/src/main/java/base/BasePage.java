@@ -82,8 +82,6 @@ public class BasePage {
     public void driverSetup(@Optional("true") String driverConfigEnabled, @Optional("chrome") String browser, @Optional("https://expedia.com") String url) {
 
 
-    public void driverSetup(@Optional("true") String driverConfigEnabled, @Optional("chrome") String browser, @Optional("https://www.bmwusa.com/") String url) {
-
 
         if (Boolean.parseBoolean(driverConfigEnabled)) {
             driverInit(browser);
