@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestSwitchLanguage extends BasePage {
-   @Test(priority =1,groups={"BAT"})
+   @Test(priority =3)
     public void switchLanguages(){
       BankOfAmericaPage bankOfAmericaPage= new BankOfAmericaPage();
         bankOfAmericaPage.doSwitchLanguages();
