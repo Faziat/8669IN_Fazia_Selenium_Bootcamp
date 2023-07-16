@@ -22,7 +22,6 @@ public class StaySearchPage extends BasePage {
     @FindBy(xpath = "(//button[@data-stid='destination_form_field-result-item-button'])[1]")
     public WebElement selectFirstCity;
 
-
     @FindBy(xpath = "//button[@id='d1-btn']")
     public WebElement checkingDateFieldButton;
 

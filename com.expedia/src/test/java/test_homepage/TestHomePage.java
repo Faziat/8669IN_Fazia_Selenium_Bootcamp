@@ -11,11 +11,11 @@ public class TestHomePage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-   @Test(priority = 1)
+    @Test(priority = 1, groups = {"Smoke"})
     public void testNavigationToApplication() {
       HomePage homepage = new HomePage();
 
-     Assert.assertTrue(isElementVisible(homepage.logo));
+     Assert.assertTrue(isElementVisible(homepage.signInLink));
 
     }
 

@@ -12,8 +12,7 @@ public class HomePage extends BasePage {
     public HomePage() {
         PageFactory.initElements(driver, this);
     }
-    @FindBy(xpath = "//a[@href='https://expedia.com/']")
-    public WebElement logo;
+
     @FindBy(xpath="//button[.='Sign in']")
     public WebElement signInLink;
 
@@ -25,19 +24,16 @@ public class HomePage extends BasePage {
     @FindBy(xpath="//button[@aria-label='Leaving from']")
     public WebElement leavingFromInputBox;
 
-    @FindBy(xpath="//button[@aria-label='Philadelphia (PHL - Philadelphia Intl.) Pennsylvania, United States']")
+    @FindBy(xpath="//button[@aria-label='Algiers, Algeria (ALG-Houari Boumediene)']")
     public WebElement airportOption;
     @FindBy(xpath = "//button[@aria-label='Going to']")
     public WebElement goingToInputBox;
 
-    @FindBy(xpath = "//button[@aria-label='Athens (ATH - Eleftherios Venizelos) Greece']")
+    @FindBy(xpath = "//button[@aria-label='San F, California, United States of America']")
     public WebElement arrivalAirport;
 
     @FindBy(xpath = "//button[normalize-space()='Search']")
     public WebElement searchButton;
-    @FindBy(xpath = "//div[contains(text(),'Support')]")
-    public WebElement supportButton;
-
     @FindBy(xpath="//div[contains(text(),'English')]")
     public WebElement englishButton;
 
