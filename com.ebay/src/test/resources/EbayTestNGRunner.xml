@@ -8,5 +8,14 @@
 
     <parameter name="browser" value="chrome"/>
     <parameter name="url" value="http://ebay.com"/>
+    <test name="Smoke">
+        <classes>
+            <class name="test_homepage.TestHomePage"/>
+            <class name="test_search.TestSearch"/>
+            <class name="test_authentication.TestAuthentication"/>
+            <class name="test_shoppingcart.TestShoppingCart"/>
+            <class name="test_searchbar.TestSearchBar"/>
+        </classes>
+    </test>
 
 </suite>

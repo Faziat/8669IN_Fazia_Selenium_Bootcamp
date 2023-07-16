@@ -9,7 +9,7 @@ import searchpage.SearchResultsPage;
 import utils.ExcelData;
 
 public class TestSearch extends BasePage {
-    @Test(priority = 1, groups = {"BAT"},dataProvider = "searchDataProvider")
+    @Test(priority = 3,dataProvider = "searchDataProvider")
     public void testDoSearch (String searchTerm){
         HomePage homepage = new HomePage();
         SearchResultsPage searchResultsPage = new SearchResultsPage();

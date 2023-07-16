@@ -4,7 +4,7 @@ import homepage.HomePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import resultpage.ResultPage;public class TestShoppingCart extends BasePage {
-    @Test(priority = 1, groups = {"BAT"})
+    @Test(priority = 5)
 
     public void testAddToCart() {
       HomePage homePage = new HomePage();

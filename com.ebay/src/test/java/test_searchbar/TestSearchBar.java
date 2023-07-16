@@ -7,7 +7,7 @@ import searchbar.SearchBar;
 
 public class TestSearchBar extends BasePage {
 
-    @Test
+    @Test(priority = 4)
     public void testSearchBar(){
         HomePage homePage=new HomePage();
         SearchBar searchBar=new SearchBar();

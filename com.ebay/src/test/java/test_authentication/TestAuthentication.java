@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import utils.ExcelData;
 
 public class TestAuthentication extends BasePage {
-    @Test(priority= 1, groups= {"BAT"},dataProvider = "loginDataProvider")
+    @Test(priority= 2, groups= {"BAT"},dataProvider = "loginDataProvider")
 
     public void testLogin(String email,String pass){
        HomePage homePage = new HomePage();
