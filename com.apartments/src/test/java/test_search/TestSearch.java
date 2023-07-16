@@ -11,15 +11,6 @@ import searchpage.SearchPage;
 import utils.ExcelData;
 
 public class TestSearch extends BasePage {
-    /*Test case: Search
-     *1. Navigate to the Apartments.com homepage
-     *2. Log in to Apartments.com with a valid user account
-     *3.Enter a specific location, such as a city or ZIP code, in the search bar.
-     *4.Set search filters, such as price range, number of bedrooms, and amenities
-     *5.Verify that the search results are displayed correctly based on the specified criteria
-
-     */
-
     @Test(priority= 3, groups= {"BAT"},dataProvider = "searchDataProvider")
 
     public void testDoSearch(String searchTerm){
@@ -53,15 +44,8 @@ public class TestSearch extends BasePage {
 
     }
 
-    /* Test Case Add to favorites
-     *1. Log in to Apartments.com with a valid user account.
-     *2. Browse through property listings and click on the "Add to Favorites" button for a few properties.
-     *3.Go to the "Favorites" section in your account.
-     *4.Verify that the favorite properties are displayed correctly and can be accessed from this section.
 
-     */
-
-    @Test(priority= 4, groups= {"BAT"})
+    @Test(priority= 3)
     public void testAddToFavorite(){
         HomePage homePage = new HomePage();
         SignInPage signInPage = new SignInPage();
